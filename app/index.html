@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>test front end</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+        <div id="simulacion">
+            <div class="contenedor">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Home</a> ></li>
+                    <li>Crédito Automotriz</li>
+                </ul>
+                <form class="simulacion">
+                    <h2 class="simulacion-titulo">Simula tu crédito automotriz</h2>
+                    <div class="simulacion-row">
+                        <div class="simulacion-col">
+                            <label for="valor_del_auto">Valor del auto</label>
+                            <input type="text" class="input required" placeholder="$" name="valor_del_auto"> <a href="#" class="icon-help">?</a>
+                            <span class="simulacion-ejemplo">$10.000.000</span>
+                        </div>
+                        <div class="simulacion-col">
+                            <label for="monto_del_pie">Monto del pie</label>
+                            <input type="text" class="input required" placeholder="$" name="monto_del_pie"> <a href="#" class="icon-help">?</a>
+                            <span class="simulacion-ejemplo">$2.000.000</span>
+                        </div>
+                        <div class="simulacion-col">
+                            <label for="plazo_del_credito">Plazo del crédito</label>
+                            <select class="select required" name="plazo_del_credito" id="plazo_del_credito">
+                                <option value=""></option>
+                                <option value="1">10 meses</option>
+                                <option>1</option>
+                                <option>1</option>
+                            </select>
+                            <a href="#" class="icon-help">?</a>
+                        </div>
+                    </div>
+                    <div class="simulacion-row">
+                        <div class="simulacion-col">
+                            <label for="marca_del_auto">Marca del auto</label>
+                            <select class="select required" name="marca_del_auto" id="marca_del_auto">
+                                <option value="ferrari">Ferrari</option>
+                                <option value="opel">Opel</option>
+                                <option value="corsa">Corsa</option>
+                            </select>
+                        </div>
+                        <div class="simulacion-col">
+                            <label for="ano_auto">Año auto</label>
+                            <select class="select required" name="ano_auto" id="ano_auto">
+                                <option value=""></option>
+                                <option value="1999">1999</option>
+                                <option value="1923">1923</option>
+                                <option value="3912">3912</option>
+                            </select>
+                        </div>
+                        <div class="simulacion-col">
+                            <label for="cuando_comprar">¿Cuando planeas comprar el vehículo?</label>
+                            <select class="select required" name="cuando_comprar" id="cuando_comprar">
+                                <option value="otro">Otro</option>
+                                <option value="si">si</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="simulacion-resultado">
+                        <span class="resultados">!Resultados</span> Instantáneos! <img src="images/flecha_seguro_automotriz.png" alt=""> <input type="submit" class="btn-simulacion" value="Simular">
+                    </div>
+                </form>
+                <div class="ayuda">
+                    <div class="ayuda-contacto">
+                        <h3 class="ayuda-titulo">Ayuda?</h3>
+                        <p class="ayuda-telefono">750 1414</p>
+                    </div>
+                    <div class="ayuda-horario">
+                        Lu. a vie. 09:00 a 21:00 hrs.<br>
+                        Sáb. 10:00 a 15:00 hrs.
+                    </div>
+                    <div class="ayuda-auto">
+                        <img src="images/auto.png" alt="">
+                    </div>
+                </div>
+                <ul class="firmas">
+                    <li><img src="images/firmas-1.png" alt="Crediautos"></li>
+                    <li><img src="images/firmas-2.png" alt="Tanner"></li>
+                    <li><img src="images/firmas-3.png" alt="Coopeuch"></li>
+                </ul>
+            </div>
+        </div>
+        <div id="testimonio" class="contenedor">
+            <div class="testimonio-intro">
+                <h2 class="testimonio-titulo">Yo coticé mi Seguro automotriz</h2>
+                <p>Conoce los testimonios de los usuarios que han comprado su seguro a tráves de ComparaOnline</p>
+                <p>¡Envíanos tu experiencia! <a href="#">Aquí</a></p>
+            </div>
+            <div class="burbuja burbuja-derecha">
+                <p>
+                <span class="quote">&#8220;</span>¡Excelente forma de ahorrar tiempo y dinero! En minutos tomé la mejor decisión según mis necesidades.<span class="quote last-quote">&#8221;</span></p>
+                <p class="testimonio-autor">Matías Ramírez | Las Condes</p>
+            </div>
+            <div class="burbuja burbuja-izquierda">
+                <p>
+                <span class="quote">&#8220;</span>El sitio es muy claro y facil de usar gracias a su diseño, además de muy rápido: el trámite lo hice en minutos.<span class="quote last-quote">&#8221;</span></p>
+                <p class="testimonio-autor">Jorge Coronado | Coquimbo</p>
+            </div>
+        </div>
+        <div id="faq">
+            <ul class="lista-tabs">
+                <li id="lista-porque" class="current">¿Por qué usar ComparaOnline?</li>
+                <li id="lista-aseguradoras">Aseguradoras</li>
+                <li id="lista-marcas">Marcas de Auto</li>
+                <li id="lista-tips">Tips y Consejos</li>
+            </ul>
+            <ul class="tabs">
+                <li id="tab-porque">
+                    <ul class="detalle-porque">
+                        <li><span class="icono-porque-1"></span><br>Compra tu auto en cuotas</li>
+                        <li><span class="icono-porque-2"></span><br>Antigüedad laboral de 1 año</li>
+                        <li><span class="icono-porque-3"></span><br>Buenos antecedentes bancarios</li>
+                        <li><span class="icono-porque-4"></span><br>Simula tu crédito y compara</li>
+                    </ul>
+                    <div class="tab-col-1">
+                        <h3>¿Para qué contratar un seguro automotriz? </h3>
+                        <p><strong>Nadie está libre de riesgos:</strong> Todos estamos expuestos a sufrir el robo de nuestro auto, de sus accesorios o un accidente. Y lo que es peor, las consecuencias son imposibles de predecir. <strong>La reparación de tu auto</strong> y el de los otros involucrados en un siniestro, puede resultar de un altísimo costo. Inclusive, pueden terminar personas lesionadas o fallecidas.</p>
+                        <p>El lado positivo de esto es que –por suerte– hay una solución: contratar un seguro automotriz para manejar más tranquilo. Hay distintos tipos de seguro automotriz en base a las coberturas que ofrecen, pero por muy simples que sean responderán mejor que tu propio bolsillo.</p>
+                    </div>
+                    <div class="tab-col-1">
+                        <h3>¿Para qué contratar un seguro automotriz? </h3>
+                        <p><strong>“El mejor seguro automotriz”</strong> como tal no existe. Lo que hace que un producto sea mejor que el otro sólo lo defines tú y tus necesidades: en cuanto a precio y calidad. Cada aseguradora ofrece <strong>seguros para autos</strong> con distintas coberturas, precios y atributos; por lo que comparar todas las opciones es lento y engorroso. En general optamos por un seguro sin antes cotizar uno afín a nuestras necesidades.</p>
+                        <p>Por ello, una forma fácil e inteligente de elegir el mejor seguro para autos es a través de nuestro comparador online de seguro automotriz. Comparas las compañías aseguradoras del mercado y eliges la oferta más conveniente. Tenemos seguros para todas las marcas de auto.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/jquery-validation/jquery.validate.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

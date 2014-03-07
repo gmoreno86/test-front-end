@@ -1,0 +1,31 @@
+// Imports
+@import 'compass';
+@import 'normalize';
+@import 'scut';
+@include scut-reset;
+@import 'susy';
+
+// Browser Compatibility
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: true;
+$legacy-support-for-mozilla: false;
+
+
+// Basic Grid
+
+$total-columns  : 8;
+$column-width: 4em; // columns are 4em wide
+$gutter-width: 1em; // with 1em gutters
+$grid-padding: 1em; // and 1em padding on the grid container
+
+$break: 12;
+
+
+$border-box-sizing: true;
+
+
+@mixin placeholder {
+  &.placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-webkit-input-placeholder { @content }
+}

@@ -1,0 +1,54 @@
+.testimonio-intro {
+    font-family: 'Corbel';
+    font-size: 18px;
+    @include at-breakpoint($break) {
+        width: 350px;
+        float: left;
+    }
+}
+
+.testimonio-titulo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0392c0;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.burbuja {
+    font-size: 14px;
+    float: left;
+    padding: 40px 20px;
+    .quote {
+        font-family: 'Georgia';
+        font-size: 60px;
+        line-height: 20px;
+        color: #0392c0;
+        display: block;
+        margin-bottom: -10px;
+
+    }
+    .last-quote {
+        text-align: right;
+        margin-top: 10px;
+    }
+}
+.burbuja-derecha {
+    background: image-url('burbuja-derecha.png');
+    width: image-width('burbuja-derecha.png');
+    height: image-height('burbuja-derecha.png');
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.burbuja-izquierda {
+    background: image-url('burbuja-izquierda.png');
+    width: image-width('burbuja-izquierda.png');
+    height: image-height('burbuja-izquierda.png');
+    float: right;
+    margin-top: 75px;
+}
+.testimonio-autor {
+    margin-top: -30px;
+    margin-right: 10px;
+    font-size: 12px;
+    text-align: right;
+}

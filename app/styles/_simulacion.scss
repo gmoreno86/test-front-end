@@ -1,0 +1,126 @@
+#simulacion {
+    background: #fff;
+}
+.simulacion {
+    @include at-breakpoint($break) {
+      @include span-columns(8,12);
+    }
+    @include box-shadow(2px 3px 4px rgba(53,53,53,.25));
+    border: solid 1px #ccc;
+    @include background-image(linear-gradient(to top, #fff 30%, #f6f6f6));
+    .error {
+        border: 1px solid #f00 !important;
+    }
+}
+.ayuda {
+    @include at-breakpoint($break) {
+        @include span-columns(4 omega,12);
+    }
+}
+
+.simulacion-titulo {
+    background: image-url('header_form.png');
+    line-height: 46px;
+    font-family: Corbel;
+    font-size: 34px;
+    font-weight: bold;
+    color: #fffefd;
+    @include text-shadow(1px 2px 2px rgba(1,123,29,.49));
+    margin-bottom: 40px;
+    padding-left: 35px;
+}
+.simulacion-row {
+    @include scut-clearfix;
+    clear: both;
+    margin-bottom: 30px;
+    padding: 0 10px 10px 45px;
+}
+.simulacion-resultado {
+    clear: both;
+    padding: 0 30px 10px 45px;
+    color: #0dbe55;
+    font-weight: bold;
+    font-family: Corbel;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: right;
+    img {
+        vertical-align: middle;
+    }
+    .resultados {
+        color: #00aadc;
+    }
+}
+.btn-simulacion {
+    @include box-shadow(1px 0 1px rgba(0,0,0,.3));
+    border: solid 1px #7da524;
+    @include background-image(linear-gradient(to top, #96cb1d, #b9f046));
+    border-radius: 5px;
+    line-height: 30px;
+    padding: 0 30px;
+    color: #385004;
+    margin-left: 20px;
+}
+.simulacion-col {
+    @include at-breakpoint($break) {
+        @include span-columns(4,12);
+        @include nth-omega(3n);
+    }
+    label {
+        font-size: 14px;
+        line-height: 22px;
+        display: block;
+    }
+    .input {
+        border: 1px solid #c4c4c4;
+        width: 100px;
+        color: #c4c4c4;
+        padding: 5px;
+    }
+    .select {
+        width: 100px;
+    }
+}
+.simulacion-ejemplo {
+    display: block;
+    font-size: 12px;
+    color: #c4c4c4;
+}
+
+.ayuda-contacto {
+    background: image-url('telefono.png') left top no-repeat;
+    padding-left: image-width('telefono.png') + 5px;
+    float: left;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #5f5f5f;
+    margin-bottom: 40px;
+}
+.ayuda-titulo {
+    color: #5f5f5f;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ayuda-telefono {
+    color: #00a7ce;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ayuda-horario {
+    font-size: 12px;
+    padding-top: 10px;
+}
+.ayuda-auto {
+    text-align: center;
+}
+.firmas {
+    clear: both;
+    list-style: none;
+    margin: 0;
+    padding: 40px 0;
+    li {
+        width: 33.333%;
+        float: left;
+        text-align: center;
+    }
+}
