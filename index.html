@@ -13,64 +13,76 @@
     <body>
         <div id="simulacion">
             <div class="contenedor">
-                <div class="breadcrumbs">
-                    <ul>
-                        <li>Home</li>
-                        <li>Crédito Automatriz</li>
-                    </ul>
-                </div>
-                <form action="simulacion">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Home</a> ></li>
+                    <li>Crédito Automotriz</li>
+                </ul>
+                <form class="simulacion">
                     <h2 class="simulacion-titulo">Simula tu crédito automotriz</h2>
                     <div class="simulacion-row">
                         <div class="simulacion-col">
                             <label for="valor">Valor del auto</label>
-                            <input type="text" placeholder="$" name="valor"> <a href="#" class="icon-help">?</a>
+                            <input type="text" class="input" placeholder="$" name="valor"> <a href="#" class="icon-help">?</a>
+                            <span class="simulacion-ejemplo">$10.000.000</span>
                         </div>
                         <div class="simulacion-col">
-                            <label for="valor">Monto del pie</label>
-                            <input type="text" placeholder="$" name="monto"> <a href="#" class="icon-help">?</a>
+                            <label for="monto">Monto del pie</label>
+                            <input type="text" class="input" placeholder="$" name="monto"> <a href="#" class="icon-help">?</a>
+                            <span class="simulacion-ejemplo">$2.000.000</span>
                         </div>
                         <div class="simulacion-col">
-                            <label for="valor">Plazo del crédito</label>
-                            <input type="text" placeholder="$" name="credito"> <a href="#" class="icon-help">?</a>
+                            <label for="credito">Plazo del crédito</label>
+                            <select class="select" name="credito" id="credito">
+                                <option value=""></option>
+                                <option value="1">1 año</option>
+                            </select>
+                            <a href="#" class="icon-help">?</a>
                         </div>
                     </div>
                     <div class="simulacion-row">
                         <div class="simulacion-col">
-                            <select name="marca" id="marca">
+                            <label for="marca">Marca del auto</label>
+                            <select class="select" name="marca" id="marca">
                                 <option value=""></option>
+                                <option value="1">Ferrari</option>
                             </select>
                         </div>
                         <div class="simulacion-col">
-                            <select name="ano" id="ano">
+                            <label for="ano">Año auto</label>
+                            <select class="select" name="ano" id="ano">
                                 <option value=""></option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
                             </select>
                         </div>
                         <div class="simulacion-col">
-                            <select name="cuando" id="cuando">
+                            <label for="marca">¿Cuando planeas comprar el vehículo?</label>
+                            <select class="select" name="cuando" id="cuando">
                                 <option value="">Otro</option>
                             </select>
                         </div>
                     </div>
                     <div class="simulacion-resultado">
-                        Resultados Instantáneos <span class="icono-flecha-resultados"></span> <input type="text" class="btn-simulacion">
+                        <span class="resultados">!Resultados</span> Instantáneos! <img src="images/flecha_seguro_automotriz.png" alt=""> <input type="submit" class="btn-simulacion" value="Simular">
                     </div>
                 </form>
                 <div class="ayuda">
                     <div class="ayuda-contacto">
-                        <h3 class="ayuda-titulo">Ayuda</h3>
-                        <p class="ayuda-telefono"></p>
+                        <h3 class="ayuda-titulo">Ayuda?</h3>
+                        <p class="ayuda-telefono">750 1414</p>
                     </div>
                     <div class="ayuda-horario">
                         Lu. a vie. 09:00 a 21:00 hrs.<br>
                         Sáb. 10:00 a 15:00 hrs.
                     </div>
-                    <div class="ayuda-auto"></div>
+                    <div class="ayuda-auto">
+                        <img src="images/auto.png" alt="">
+                    </div>
                 </div>
                 <ul class="firmas">
-                    <li><img src="images/firma-1.png" alt="Crediautos"></li>
-                    <li><img src="images/firma-2.png" alt="Tanner"></li>
-                    <li><img src="images/firma-3.png" alt="Coopeuch"></li>
+                    <li><img src="images/firmas-1.png" alt="Crediautos"></li>
+                    <li><img src="images/firmas-2.png" alt="Tanner"></li>
+                    <li><img src="images/firmas-3.png" alt="Coopeuch"></li>
                 </ul>
             </div>
         </div>
@@ -81,11 +93,13 @@
                 <p>¡Envíanos tu experiencia! <a href="#">Aquí</a></p>
             </div>
             <div class="burbuja burbuja-derecha">
-                <p>¡Excelente forma de ahorrar tiempo y dinero! En minutos tomé la mejor decisión según mis necesidades.</p>
+                <p>
+                <span class="quote">&#8220;</span>¡Excelente forma de ahorrar tiempo y dinero! En minutos tomé la mejor decisión según mis necesidades.<span class="quote last-quote">&#8221;</span></p>
                 <p class="testimonio-autor">Matías Ramírez | Las Condes</p>
             </div>
             <div class="burbuja burbuja-izquierda">
-                <p>El sitio es muy claro y facil de usar gracias a su diseño, además de muy rápido: el trámite lo hice en minutos.</p>
+                <p>
+                <span class="quote">&#8220;</span>El sitio es muy claro y facil de usar gracias a su diseño, además de muy rápido: el trámite lo hice en minutos.<span class="quote last-quote">&#8221;</span></p>
                 <p class="testimonio-autor">Jorge Coronado | Coquimbo</p>
             </div>
         </div>
