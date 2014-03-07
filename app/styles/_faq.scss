@@ -1,0 +1,77 @@
+#faq {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #cccccc;
+}
+.lista-tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include at-breakpoint($break) {
+        width: 192px;
+        float: left;
+    }
+    li {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Corbel';
+        @include at-breakpoint($break) {
+            padding: 25px 20px;
+            display: list-item;
+            text-align: left;
+        }
+        &.current {
+            color: #33b556;
+            font-weight: bold;
+        }
+    }
+}
+.tabs {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include at-breakpoint($break) {
+      width: 750px;
+    }
+    > li {
+        display: none;
+        &.current {
+            display: block;
+        }
+    }
+    h3 {
+        color: #33b556;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+}
+.detalle-porque {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Corbel';
+    font-size: 14px;
+    text-align: center;
+    color: #33b556;
+    margin-bottom: 60px;
+    li {
+        @include inline-block;
+        background:image-url('porque-circulo.png') no-repeat;
+        width: image-width('porque-circulo.png');
+        height: image-height('porque-circulo.png');
+        padding: 20px 10px;
+        font-weight: bold;
+        margin: 0 20px;
+        span {
+            height: 60px;
+        }
+    }
+}
+.tab-col-1 {
+    width: 50%;
+    padding: 10px;
+    float: left;
+}

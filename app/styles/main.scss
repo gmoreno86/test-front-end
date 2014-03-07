@@ -1,5 +1,15 @@
-// 0. Base (Resets - Normalize)
+/* 0. Base (Resets - Normalize) */
 @import 'base';
+
+/* 0.5. Iconos */
+$iconos-sprite-dimensions: true;
+$iconos-spacing: 10px;
+@import "iconos/*.png";
+@include all-iconos-sprites;
+.icono {
+    display: inline-block;
+    vertical-align: middle;
+}
 
 body {
     background: #f8f8f8;
@@ -12,7 +22,7 @@ body {
         @include set-container-width;
     }
 }
-// 1. Header
+/* 1. Header */
 .breadcrumbs {
     list-style: none;
     margin: 0;
@@ -28,8 +38,11 @@ body {
         }
     }
 }
-// 2. Simulacion
+/* 2. Simulacion */
 @import 'simulacion';
 
-// 3. Testimonio
+/* 3. Testimonio */
 @import 'testimonio';
+
+/* 4. FAQ */
+@import 'faq';
